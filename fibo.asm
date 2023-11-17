@@ -87,8 +87,8 @@ fib_1:
 arquivo:
     mov rax, 2
     lea rdi, [f_arquivo]
-    mov edx, 664o
-    mov esi, 102o
+    mov edx, 664o ; modo do arquivo
+    mov esi, 102o ; flags 
     syscall
 
     mov r9, rax
